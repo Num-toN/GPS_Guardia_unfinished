@@ -1,7 +1,4 @@
-import dotenv from 'dotenv';
-
-// Load environment variables from .env file
-dotenv.config();
+import Constants from 'expo-constants';
 
 // Type for the response from the Geocoding API
 interface GeocodeResponse {
@@ -15,11 +12,11 @@ interface GeocodeResponse {
 
 export const getZipCode = async (latitude: number, longitude: number): Promise<string | null> => {
   try {
-    // Access your Google API key from the environment variables
-    const apiKey = process.env.GOOGLE_API_KEY;
+    // Access the Google API key from expo constants
+    const apiKey = Constants.manifest.extra.googleApiKey;
 
     if (!apiKey) {
-      throw new Error('Google API key is missing. Please check your .env file.');
+      throw new Error('Google API key is missing. Please check your app.json file.');
     }
 
     const response = await fetch(
@@ -50,7 +47,7 @@ export const getZipCode = async (latitude: number, longitude: number): Promise<s
 
     return zipCode;
 
-  } catch (error: unknown) { // Error is explicitly typed as 'unknown'
+  } catch (error: unknown) {
     // TypeScript error handling for unknown errors
     if (error instanceof Error) {
       // Now we know that error is an instance of Error
