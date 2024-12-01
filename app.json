@@ -5,9 +5,9 @@
     "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./app/assets/images/icon.png",
     "splash": {
-      "image": "./assets/images/splash-icon.png",
+      "image": "./app/assets/images/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -23,6 +23,7 @@
     },
     "extra": {
       "googleApiKey": "AIzaSyBHB408WKSqoJKhdJrQ3ckHduUU58UqiA0"
-    }
+    },
+    "newArchEnabled": false
   }
 }
