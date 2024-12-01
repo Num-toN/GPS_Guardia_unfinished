@@ -10,8 +10,15 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "types": ["react", "react-native", "react-navigation"],
+    "types": [
+      "react",
+      "react-native",
+      "react-navigation"
+    ],
     "resolveJsonModule": true
   },
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ],
+  "extends": "expo/tsconfig.base"
 }
