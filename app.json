@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Guardia",
+    "slug": "guardia",
+    "platforms": ["ios", "android"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "bundleIdentifier": "com.guardia.app",
+      "buildNumber": "1.0.0",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.guardia.app",
+      "versionCode": 1
+    },
+    "extra": {
+      "googleApiKey": "YOUR_GOOGLE_API_KEY"
+    }
+  }
+}
