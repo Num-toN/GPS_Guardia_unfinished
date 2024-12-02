@@ -1,7 +1,5 @@
 import { AppRegistry } from 'react-native';
-import App from './App';  // Import the main app component
-import * as appConfig from './app.json';  // Import the entire app.json file
+import App from './App';  // Main App component
+import { expo } from './app.json';  // Import 'expo' from app.json
 
-const { name } = appConfig.expo;  // Access 'expo' and get 'name'
-
-AppRegistry.registerComponent(name, () => App);  // Register the app component as the entry point
+AppRegistry.registerComponent(expo.name, () => App);  // Register the app component using 'expo.name'
